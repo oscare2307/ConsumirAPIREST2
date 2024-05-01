@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FileStore.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label Text="Agregar Producto" HorizontalOptions="Center" FontSize="Small"/>
+           
+            <Label Text="Titulo"  VerticalOptions="Center" />
+            <Entry x:Name="EntryTitulo" VerticalOptions="Center"/>
+
+            <Label Text="Precio" VerticalOptions="Center" />
+            <Entry x:Name="EntryPrecio"  VerticalOptions="Center"/>
+
+            <Label Text="Descripcion" VerticalOptions="Center"/>
+            <Entry x:Name="EntryDescripcion" VerticalOptions="Center"/>
+
+            <Label Text="Categoria" VerticalOptions="Center"/>
+            <Entry x:Name="EntryCategoria" VerticalOptions="Center"/>
+
+            <Button Text="Agregar Producto" Clicked="Button_Clicked"/>
+            
+            <Button Text="Consultar Producto" Clicked="Button_Clicked_1" />
+
+            <Button Text="Actualizar Producto" Clicked="Button_Clicked_2" />
+
+            <Button Text="Eliminar Producto" Clicked="Button_Clicked_3" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
